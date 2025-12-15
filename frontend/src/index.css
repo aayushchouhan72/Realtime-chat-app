@@ -1,16 +1,15 @@
-@import "tailwindcss";
-@plugin "daisyui";
-
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
+/* Tailwind directives — keep only the @tailwind rules below.
+   Plugins like daisyUI should be configured in tailwind.config.js plugins.
+*/
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
